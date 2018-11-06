@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="Overdraw">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="5">
+
+        <EditText
+            android:id="@+id/edBookID_dialog_addBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bookID"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spnTypeBookID_dialog_addBook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/btnThemTheLoai"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="0.3"
+            android:text="@string/add"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edBookName_dialog_addBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bookName"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edAuthor_dialog_addBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/author"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edNXB_dialog_addBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/NXB"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edPrice_dialog_addBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/price"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edQuantity_dialog_addBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/quantity"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnAdd_dialog_addBook"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:text="@string/add"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnCancel_dialog_addBook"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+</LinearLayout>

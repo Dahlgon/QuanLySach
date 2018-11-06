@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="Overdraw">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="5">
+
+        <EditText
+            android:id="@+id/edTypeBookID_dialog_AddTypeBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/GenreId"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edTypeBookName_dialog_AddTypeBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/GenreName"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edPosition_dialog_AddTypeBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pos"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edDescription_dialog_AddTypeBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/des"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnAdd_dialog_AddTypeBook"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:text="@string/add"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnCancel_dialog_AddTypeBook"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="Overdraw">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        app:counterMaxLength="50"
+        app:counterEnabled="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/edUserName_dialogAdd_User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        app:counterMaxLength="50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/edPassWord_dialogAdd_User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pass_word" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        app:counterMaxLength="50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/edPassWord2_dialogAdd_User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pass_word2" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        app:counterMaxLength="11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/edPhone_dialogAdd_User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        app:counterMaxLength="50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/edName_dialogAdd_User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginBottom="3dp"
+            android:id="@+id/btnAddUser_dialogAdd_User"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/add"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_marginBottom="3dp"
+            android:id="@+id/btnCancel_dialogAdd_User"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

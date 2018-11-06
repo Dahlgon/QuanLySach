@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:ignore="Overdraw">
+
+    <android.support.design.widget.TextInputLayout
+        app:counterMaxLength="50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:inputType="text"
+            android:id="@+id/edName_dialogEditUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        app:counterMaxLength="11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/edPhone_dialogEditUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginBottom="3dp"
+            android:id="@+id/btnEdit_dialogEditUser"
+            android:textAllCaps="false"
+            android:text="@string/edit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp" />
+
+        <Button
+            android:layout_marginBottom="3dp"
+            android:id="@+id/btnCancel_dialogEditUser"
+            android:textAllCaps="false"
+            android:layout_marginStart="10dp"
+            android:text="@string/cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</LinearLayout>

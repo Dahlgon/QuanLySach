@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".StatisticActivtiy"
+    tools:ignore="Overdraw">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarStatistic"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#B0003A"
+        android:theme="@style/OverFlow">
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#B0003A"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/statistic_day" />
+
+        <TextView
+            android:id="@+id/tvStatisticDay"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+           />
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#B0003A"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/statistic_month" />
+
+        <TextView
+            android:id="@+id/tvStatisticMonth"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#B0003A"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/statistic_year" />
+
+        <TextView
+            android:id="@+id/tvStatisticYear"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+           />
+
+    </LinearLayout>
+</LinearLayout>
